@@ -1,1 +1,161 @@
-<h1>Stylin' with css.</h1>
+1 <!DOCTYPE html>
+<html>
+  </head>
+  <title>Stylin' with CSS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+   html{
+    background-color:#ccc;
+   } 
+
+    body {
+        font-family:'Courier New', Courier, monospace;
+        max-width: 960px;
+        width: 90%;
+        background-color:#fff;
+        margin: 0 auto;
+        
+    }
+
+    header.page-header{
+      background-color: yellow;
+    }
+
+
+    nav{
+		  text-align:center; /* centers the nav */
+		}
+		
+		nav ul {
+      list-style:none; /* removes the bullets */
+      }
+    nav ul li
+			{
+			display:inline-block; /* makes horizontal, but able to declare margins */
+			margin:0 2%; /* margin left-right, gets smaller as necessary */
+			}
+		nav a:hover{
+			text-decoration: none;
+		}	
+
+    footer.page-footer{
+      text-align:center;
+      clear:both;
+    }
+    table.my-table {
+         border-collapse: collapse;
+       }
+ 
+       table.my-table th {
+         background-color: #54585d;
+         color: #ffffff;
+         font-weight: bold;
+         font-size: 13px;
+         border: 1px solid #54585d;
+       }
+ 
+       table.my-table td {
+         padding: 15px;
+       }
+     table.my-table td {
+       color: #636363;
+       border: 1px solid #383c3f;
+     }
+     table.my-table tr {
+       background-color: #63aaf5;
+     }
+     table.my-table tr:nth-child(odd) {
+       background-color: #ffffff;
+     }
+
+
+  </style>
+  <body>
+   <header class="page-header"> 
+  
+    
+    <h1>Stylin' with CSS</h1>
+   </header>
+   <nav>
+      <ul>
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+        <li><a href="#">Link 4</a></li>
+        <li><a href="#">Link 5</a></li>
+        <li><a href="#">Link 6</a></li>
+      </ul>
+   </nav>
+    <p>Clever content  goes here</p>
+    <p>Clever content  goes here</p>
+    <p>Clever content  goes here</p>
+    <p>
+      <ul>
+        <li>deadpool</li>
+        <li>KillBill</li>
+        <li>SpiderMan</li>
+      </ul>
+    </p>
+    <p>
+      <ol>
+        <li>strawberry</li>
+        <li>Mango</li>
+        <li>Apple</li>
+      </ol>
+    </p>
+  </body>
+
+ <p><img src="https://picsum.photos/200/300"/></p> 
+  
+<p><a href="https://picsum.photos/" target="_blank">Lorem Picsum</a></p>
+  
+  <p>This is how we use a <strong>strong</strong> tag. This is how we use an <em>em</em> tag. This is how we use a <strike>strike</strike> tag.</p>
+
+<div>This is a div, which is the default blocking element in HTML.</div>
+
+  <p>Here is a <span style="background-color:yellow">span</span>. Which is the default inline element.</p>
+
+<table class="my-table">
+  <tr>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Email</th>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>John@mail.com</td>
+  </tr>
+    <tr>
+    <td>Jill</td>
+    <td>Doe</td>
+    <td>Jill@mail.com</td>
+  </tr>
+  <tr>
+      <td>Judy</td>
+      <td>Doe</td>
+      <td>Judy@mail.com</td>
+
+  </tr>
+
+</table>
+
+
+<footer class="page-footer">
+  <p><small>&copy; 2022 by 
+      Turiq Johnson, All Rights Reserved ~ 
+      <a id="html-checker" href="#">Check HTML</a> ~ 
+      <a id="css-checker" href="#">Check CSS</a></small>
+ </p>
+</footer >
+<script>
+  //https://tinyurl.com/dynamic-html-checker
+  document.getElementById("html-checker").setAttribute("href","https://validator.w3.org/nu/?doc=" + location.href);
+    
+  document.getElementById("css-checker").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);  
+  
+</script>
+
+
+</body>
+</html>
